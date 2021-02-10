@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*__typography__*/
+
+.container h2{
+    font-size: 2.5rem;
+    border-bottom:  0.15em solid black;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+header{
+    height: 4em;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    cursor: pointer;
+}
+header h2{
+
+    margin: 0.40em;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav li{
+    margin: 0 1em;
+}
+
+nav a{
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+
+
+}
+p{
+    margin: 1em;
+    padding: 1em;
+}
+
+header{
+    width: 100%;
+    background: black;
+    color: white;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    background-color: wheat;
+    text-align: center;
+    max-width: 950px;
+}
+footer{
+    width: 100%;
+}
+
+footer p{
+    max-width:950px;
+    text-align: center;
+    margin: 1em auto;
+    justify-content: space-between;
+}
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:1em auto;
+
+}
+input,
+textarea,
+button{
+    padding: 0.5em;
+    margin: 00.5em;
+}
+
+button{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+
+img{
+    width: 80%;
+    margin: 0.55em auto;
+}
+
+footer{
+    display: flex;
+    background: black;
+    color: white;
+    bottom: 0px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 0.60em;
+    top: 0.65em;
+
+}
+.line{
+    width: 1.5em;
+    background-color: white;
+    height: 0.25em;
+    margin: 0.20em 0.20em;
+}
+
+
+
+@media (max-width:700px){
+    header{
+        width: 100%;
+        flex-direction: column;
+        height: 3.5em;
+        
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer p{
+        margin: 1em;
+    }
+    nav{
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.4s ease-out;
+        
+    }
+    nav ul{
+        flex-direction: column;
+        margin: 1em;
+        padding: 1em;
+    
+    }
+    nav li{
+        margin: 0.05em;
+        padding: 0.05em;
+    }
+    nav a{
+        margin: 1.25em auto;
+        padding: 0.25em;
+    }
+    .burger{
+        display: block;
+    }
+    .navbar{
+        opacity: 0;
+        
+    }
+
+
+}
